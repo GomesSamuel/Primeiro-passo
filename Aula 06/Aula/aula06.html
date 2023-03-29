@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Lista de jogos favoritos</h1>
+   <fieldset>
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required="required">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" size="57" placeholder="exemplo.de.email@ios.com">
+        <br><br>
+    </fieldset>
+    <form method="post" id="fContato" action="mailto:email@gmail.com.br" oninput="result.value=parseInt(valor_01.value)+parseInt(valor_02.value)"
+        <!-- Utilizando o elemento Rádio e Checkbox -->
+        <p>Qual jogo você mais jogou?</p>
+        <input type="radio" name="ljogos" id="op1">
+        <label for="op1">Sonic</label>
+        <br>
+        <input type="radio" name="ljogos" id="op2">
+        <label for="op2">Super Mario</label>
+        <br>
+        <input type="radio" name="ljogos" id="op3">
+        <label for="op3">Golden Axe</label>
+        <br> <br>
+        <p> Qual plataforma você joga?</p>
+        <input type="checkbox" name="con" id="po1">
+        <label for="po1">Xbox</label>
+        <br>
+        <input type="checkbox" name="con" id="po2">
+        <label for="po2">Playstation</label>
+        <br>
+        <input type="checkbox" name="con" id="po3">
+        <label for="po3">Pc</label>
+        <!-- lista de jogos elemento select -->
+        <br><br>
+        <label for="jogos">Selecione um Jogo</label>
+        <select name="jogos" id="jogos">
+            <option value="selecione_o_jogo" disabled selected>Selecione o jogo</option>
+            <option value="gta_v">GTA V</option>
+            <option value="assassins_creed_iv">Assassins Creed IV</option>
+            <option value="the_last_of_us">The Last of Us</option>
+            <option value="valorant">Valorant</option>
+        </select>
+        <!-- auto complete -->
+        <br><br>
+        <label for="plat">Escolha a plataforma</label>
+        <input autocomplete="on" list="plataforma" name="plat" id="name" placeholder="Plataforma">
+        <datalist id="plataforma">
+            <option value="Android"></option>
+            <option value="Ios"></option>
+            <option value="Steam"></option>
+            <option value="Gamepass"></option>
+            <option value="PSN"></option>
+        </datalist>
+        <br><br>
+        <input type="range" id="valor_01" name="valor_01" /> 100 <br /><br />
+        <br>
+        <label for="sugestao">Deixe sua sugestão</label>
+        <br>
+        <textarea placeholder="Escreva aqui:" name="sugestao" id="sugestao" cols="30" rows="7"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

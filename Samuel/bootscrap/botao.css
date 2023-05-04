@@ -1,0 +1,11 @@
+a {
+  border-radius: 10px;
+  background-color: rgb(124, 124, 220);
+  text-decoration: none;
+  color: white;
+  padding: 13px;
+  font-size: large;
+}
+a:hover {
+  background-color: blue;
+}
